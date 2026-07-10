@@ -1,5 +1,5 @@
 // ── Couche d'accès Airtable — base 5P STAR (appHlqfEa5sJhNixT) ─────────
-export const BASE_ID = 'appHlqfEa5sJhNixT';
+export const BASE_ID = 'app79m9PEiSw8iHWn';
 export const T = {
   SALARIES:      'tbl12XOxlZk1xFy5W',
   HOTELS:        'tbltHWrjqtIT8wn3I',
