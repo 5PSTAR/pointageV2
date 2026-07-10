@@ -1,5 +1,6 @@
-// ── Couche d'accès Airtable — base 5P STAR (appHlqfEa5sJhNixT) ─────────
-export const BASE_ID = 'app79m9PEiSw8iHWn';
+// ── Couche d'accès Airtable — base 5P STAR ────────────────────────────
+// La base cible est configurable : AIRTABLE_BASE dans les variables Vercel.
+export const BASE_ID = process.env.AIRTABLE_BASE || 'app79m9PEiSw8iHWn';
 export const T = {
   SALARIES:      'tbl12XOxlZk1xFy5W',
   HOTELS:        'tbltHWrjqtIT8wn3I',
@@ -147,3 +148,4 @@ export function envoyerErreur(res, err) {
   console.error(err);
   res.status(err.status && err.status < 500 ? err.status : 500).json({ error: err.message || 'Erreur serveur' });
 }
+
